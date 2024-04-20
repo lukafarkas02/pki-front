@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
-import {LoginPageComponent} from "./login/login-page/login-page.component";
+import {CeratificatesListComponent} from "./certificates/ceratificates-list/ceratificates-list.component";
 
 export const routes: Routes = [
+  {path: 'certificates-list', component: CeratificatesListComponent},
   {path: "login", component: LoginPageComponent}
 ];
