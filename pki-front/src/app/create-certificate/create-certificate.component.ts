@@ -45,7 +45,7 @@ export class CreateCertificateComponent {
   selectedSerialNumber: string = "";
 
   constructor(
-    public http: HttpClient
+    //public http: HttpClient
   ) {
   }
 

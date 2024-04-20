@@ -16,7 +16,7 @@ export class LoginPageComponent {
   loginDTO: LoginDTO = new LoginDTO();
 
   constructor(
-    private http: HttpClient
+    //private http: HttpClient
   ) {
   }
 

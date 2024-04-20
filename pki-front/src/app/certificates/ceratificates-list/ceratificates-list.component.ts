@@ -16,8 +16,8 @@ import {CertificateService} from "../../services/certificate-service";
 export class CeratificatesListComponent implements OnInit{
   certificates: any[] = [];
   constructor(
-    private http: HttpClient,
-    private certificateService: CertificateService
+    //private http: HttpClient,
+    //private certificateService: CertificateService
   ) {
     this.certificates = [
       {
