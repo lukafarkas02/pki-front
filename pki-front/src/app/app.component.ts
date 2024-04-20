@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {CreateCertificateComponent} from "./create-certificate/create-certificate.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CreateCertificateComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
