@@ -3,6 +3,7 @@ import {FormsModule} from "@angular/forms";
 import {NgIf} from "@angular/common";
 import {CertificateParamsDTO} from "../DTOs/certificateParamsDTO";
 import {serialize} from "v8";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-create-certificate',
@@ -42,6 +43,11 @@ export class CreateCertificateComponent {
   startTime: string = "";
 
   selectedSerialNumber: string = "";
+
+  constructor(
+    public http: HttpClient
+  ) {
+  }
 
   calculateDate(){
     const start = this.startDate + "T" + this.startTime;
