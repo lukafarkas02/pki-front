@@ -62,6 +62,15 @@ h2 {
   border-radius: 5px;
 }
 
+.valid-dates input[type="time"] {
+  width: 15%;
+  margin: 10px 5px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 .issuer {
   text-align: center;
 }

@@ -29,13 +29,14 @@
 
   <div class="valid-dates">
     <h2>Choose start end end date for your certificate</h2>
-    <input type="date" id="startDate" name="startDate" placeholder="Start Date">
+    <input type="date" id="startDate" name="startDate" placeholder="Start Date" [(ngModel)]="startDate">
+    <input type="time" name="time" [(ngModel)]="startTime">
 <!--    <input type="date" id="endDate" name="endDate" placeholder="End Date">-->
   </div>
 
   <div class="issuer" *ngIf="certificateType != 'selfSigned'">
     <h2>Choose the issuer of your certificate</h2>
-    <select id="issuer" name="issuer">
+    <select id="issuer" name="issuer" [(ngModel)]="selectedSerialNumber">
       <option selected disabled hidden value="">Choose the issuer</option>
       <option value="A">A</option>
       <option value="B">B</option>
