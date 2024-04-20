@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {CreateCertificateComponent} from "./create-certificate/create-certificate.component";
 import {Router, RouterOutlet} from '@angular/router';
 import {CeratificatesListComponent} from "./certificates/ceratificates-list/ceratificates-list.component";
 import {LoginPageComponent} from "./login/login-page/login-page.component";
