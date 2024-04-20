@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {NgForOf} from "@angular/common";
+import {HttpClient} from "@angular/common/http";
+import {CertificateService} from "../../services/certificate-service";
 
 @Component({
   selector: 'app-ceratificates-list',
@@ -11,9 +13,12 @@ import {NgForOf} from "@angular/common";
   templateUrl: './ceratificates-list.component.html',
   styleUrl: './ceratificates-list.component.css'
 })
-export class CeratificatesListComponent {
+export class CeratificatesListComponent implements OnInit{
   certificates: any[] = [];
-  constructor() {
+  constructor(
+    private http: HttpClient,
+    private certificateService: CertificateService
+  ) {
     this.certificates = [
       {
         id: 'ABC123',
@@ -30,5 +35,17 @@ export class CeratificatesListComponent {
         validTo: '02.02.2025'
       }
     ];
+  }
+
+  ngOnInit() {
+    /*
+    TODO: Pozvati metodu iz servisa koja dobavlja sve sertifikate sa servera i popuniti certificates listu
+     */
+  }
+
+  revoke(){
+    /*
+    TODO: Pozzvati metodu iz servisa koja revoke-uje sertifikat
+     */
   }
 }
